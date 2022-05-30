@@ -1,0 +1,42 @@
+.home-blog {
+    top: 0;
+    height: 99vh;
+    width: 100%;
+    // padding-top: 40vh;
+    // align-items: center;
+    text-align: center;
+    // overflow: hidden;
+    background:    
+    -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black),
+    url("../img/girl1.jpg") center top;
+    background-size: cover;
+
+    h1 {
+        font-size: 3.4rem;
+        color: white;
+    }
+    .explore-btn{
+       display: block;
+       margin: 0 auto;
+       padding: 16px 64px;
+       font-size: 0.9rem;
+       background-color: transparent;
+       color: white;
+       border: 1px solid $pink;
+       border-radius: 2rem;
+       cursor: pointer;
+    }
+
+}    
+
+.home-blog a {
+     
+    text-decoration: none; 
+    color: white;
+   
+}
+
+.home-blog a:hover {
+    color: #e90e65;
+    cursor: pointer;
+}

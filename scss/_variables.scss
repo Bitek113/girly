@@ -1,0 +1,36 @@
+$pink: #e90e65;
+$text-lightgray: #584f53;
+$crimson:#dc0e56;
+
+
+
+.zip-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // height: 50px;
+    width: 100%;
+}
+
+.zip-content h1 {
+    color: #584f53;
+}
+
+.arrow {
+    height: 10px;
+    width: 8px;
+    border-radius: 100%;
+    outline: 1px solid #584f53;
+    outline-offset: 5px;
+    margin-left: 16px;
+}
+
+.arrow:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.arrow:nth-last-child(2) {
+    transform: scaleX(-1);
+}

@@ -1,0 +1,30 @@
+header {
+
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    // overflow: hidden;
+    
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        margin: 10px auto;
+        
+    }
+
+    li {
+        padding: 0 15px;
+        font-size: 1.1rem;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.nav {
+    width: 80%;
+    background-color: aqua;
+    display: block;
+}

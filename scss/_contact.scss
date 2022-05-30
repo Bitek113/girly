@@ -1,0 +1,82 @@
+.contact {
+    margin-top: 32.1px;
+    height: 96vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &-form {
+        
+        grid-column: 2;
+        background: $pink;
+
+        &-text {
+            color: $pink;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        &-wrapper {
+            height: 520px;
+            width:  380px;
+            background: white;
+            border-radius: 20px;
+            margin: 110px auto;
+            display: grid;
+            justify-items: center;
+
+        }
+        &-field {       
+        //    margin-bottom: 20px;
+        //     border: none;
+        //     background-color: #ebd8df;
+        //     border-radius: 25px;
+        //     font-size: 15px;
+        //     padding: 10px 15px;
+        }
+
+        &-wrapper input {
+            margin-bottom: 20px;
+            border: none;
+            background-color: #ebd8df;
+            border-radius: 25px;
+            font-size: 15px;
+            padding: 16px 60px;
+        }
+        // &-wrapper:active input{
+        //     border: 1px solid blue;
+        // }
+
+        &-wrapper textarea {
+            margin-bottom: 20px;
+            border: none;
+            background-color: #ebd8df;
+            border-radius: 25px;
+            font-size: 15px;
+            padding: 25px 30px;
+            resize: none;
+        }
+    }
+
+}
+
+.google-maps {
+    grid-column: 1;
+}
+
+#active:checked + label > input {
+    border: 1px solid red;
+}
+.send-btn {
+    background: #e90e65;
+    width: 140px;
+    padding: 13px 0;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 18px;
+}

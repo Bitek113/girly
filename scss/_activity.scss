@@ -1,0 +1,28 @@
+.activity {
+    height: 100vh;
+    // width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #f3e7e8;
+
+    &-wrapper {
+        height: 80%;
+        width: 72vw;
+        // margin: 0 auto;
+        // background: aqua;
+        // display: flex;
+        // justify-content: space-between;
+    }
+}
+
+.kokos {
+    display: flex;
+    column-gap: 15px;
+    
+    
+}
+
+.activity-image {
+    width: 450px;
+}

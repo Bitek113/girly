@@ -1,0 +1,78 @@
+.about {
+    height: 54vh;
+    display: flex;
+    flex-direction: row;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black),
+    url("../img/girl1.jpg"), url("../img/girl2.jpg");
+    // background-position: left, right;
+   
+    &-wrapper {
+        width: 900px;
+        background: white;
+        display: flex;
+        // justify-content: ;
+        flex-direction: row;
+        border-radius: 1rem;
+        height: 400px;
+        position: absolute;
+        top: -30%;
+    }
+
+
+    &-card-image img{
+        width: 100%;
+        
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+
+        
+    }
+    &-card-text, &-card-image {
+        width: 50%;
+    }
+    &-card-text{
+        width: 350px;
+        // height: 360px;
+        // background: aqua;
+        // display: flex;
+        // flex-direction: column;
+        padding: 30px 0 0 40px;
+
+        h2 {
+            font-size: 1.8rem;
+            color: #3d383a;
+        }
+
+        &-card-text span {
+            width: 50px;
+            height: 5px;
+            background: $pink;  
+        }
+        button {
+            background: $pink;
+            color: white;
+            padding: 15px 45px;
+            border: none;
+            border-radius: 2rem;
+        }
+        
+    }
+    &-card-text-header {
+        color: #978b91;
+        font-size: 1.4rem;
+    }
+    &-card-text-description {
+        color: #584f53;
+        font-size: 1.2rem;
+
+    }
+}
+
+.iam {
+    display: flex;
+    justify-content: center;
+    background: $pink;
+    height: 400px;
+    position: relative;
+}
+
