@@ -26,11 +26,38 @@ $crimson:#dc0e56;
     margin-left: 16px;
 }
 
-.arrow:hover {
-    background-color: white;
-    cursor: pointer;
+// .arrow:hover {
+//     // background-color: white;
+//     cursor: pointer;
+// }
+
+.arrows .hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;        
+}
+
+.arrows:hover .hover {
+    display: inline;
 }
 
 .arrow:nth-last-child(2) {
     transform: scaleX(-1);
+}
+
+
+.gradient-overlay {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    }
 }

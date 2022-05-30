@@ -19,13 +19,34 @@
   margin-left: 16px;
 }
 
-.arrow:hover {
-  background-color: white;
-  cursor: pointer;
+.arrows .hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.arrows:hover .hover {
+  display: inline;
 }
 
 .arrow:nth-last-child(2) {
   transform: scaleX(-1);
+}
+
+.gradient-overlay {
+  position: relative;
+}
+
+.gradient-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
 }
 
 header {
@@ -96,7 +117,9 @@ header li:nth-child(1) {
   height: 54vh;
   display: flex;
   flex-direction: row;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black), url("../img/girl1.jpg"), url("../img/girl2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black), url("../img/girl1.jpg"), url("../img/girl2.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
 }
 
 .about-wrapper {
@@ -142,6 +165,7 @@ header li:nth-child(1) {
   padding: 15px 45px;
   border: none;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .about-card-text-header {
@@ -478,8 +502,14 @@ header li {
 }
 
 h1 {
-  color: white;
+  color: #584f53;
   font-size: 1.6rem;
+}
+
+.portfolio-header {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 .zip-content-works {
@@ -497,11 +527,13 @@ h1 {
   outline: 1px solid white;
   outline-offset: 5px;
   margin-left: 16px;
+  cursor: pointer;
 }
 
 .arrow-works:hover {
-  background-color: white;
-  cursor: pointer;
+  background: white;
+  outline: 5px solid white;
+  outline-offset: 0.1px;
 }
 
 .arrow-works:nth-last-child(2) {
@@ -589,6 +621,7 @@ h1 {
   font-size: 30px;
   color: #584f53;
   border-radius: 100%;
+  cursor: pointer;
   outline: 1px solid gray;
   outline-offset: 7px;
 }
@@ -607,7 +640,7 @@ h1 {
 }
 
 .instagram-feed-card-description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #666666;
   text-align: justify;
 }
@@ -621,6 +654,7 @@ h1 {
   background-color: #0286c2;
   border-color: #03a9f4;
   margin: 20px 150px;
+  cursor: pointer;
 }
 
 body {
@@ -629,6 +663,7 @@ body {
   font-size: 10px;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
 }
 
 footer {

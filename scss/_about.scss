@@ -2,9 +2,14 @@
     height: 54vh;
     display: flex;
     flex-direction: row;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black),
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black),
     url("../img/girl1.jpg"), url("../img/girl2.jpg");
-    // background-position: left, right;
+    background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+    background-position:  bottom right,
+    left,
+    right;
    
     &-wrapper {
         width: 900px;
@@ -54,6 +59,7 @@
             padding: 15px 45px;
             border: none;
             border-radius: 2rem;
+            cursor: pointer;
         }
         
     }

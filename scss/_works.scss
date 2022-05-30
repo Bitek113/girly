@@ -47,10 +47,14 @@
 }
 
 h1 {
-    color: white;
+    color: #584f53;
     font-size: 1.6rem;
 }
-
+.portfolio-header {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
 .zip-content-works {
     display: flex;
     flex-direction: row;
@@ -69,11 +73,14 @@ h1 {
     outline: 1px solid white;
     outline-offset: 5px;
     margin-left: 16px;
+    cursor: pointer;
 }
 
 .arrow-works:hover {
-    background-color: white;
-    cursor: pointer;
+    background: white;
+   outline: 5px solid white;
+   outline-offset: 0.1px;
+
 }
 
 .arrow-works:nth-last-child(2) {
