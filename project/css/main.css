@@ -49,6 +49,14 @@
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
 }
 
+.gradient-overlay .gradient-overlay:hover {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95));
+}
+
+.h1-white {
+  color: white;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -651,10 +659,15 @@ h1 {
   width: 120px;
   padding: 5px 0;
   border-radius: 40px;
-  background-color: #0286c2;
-  border-color: #03a9f4;
+  background-color: #04a9f4;
+  border: none;
   margin: 20px 150px;
   cursor: pointer;
+}
+
+.twitter-btn:hover {
+  background: #0691d1;
+  border-color: #04a9f4;
 }
 
 body {
