@@ -37,6 +37,7 @@
 
 .gradient-overlay {
   position: relative;
+  border-radius: 15px;
 }
 
 .gradient-overlay::after {
@@ -45,16 +46,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 99.9%;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
-}
-
-.gradient-overlay .gradient-overlay:hover {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95));
+  border-radius: 15px;
 }
 
 .h1-white {
   color: white;
+}
+
+.gradient-overlay:hover:after {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95));
+  transition: .4s ease;
 }
 
 header {
@@ -194,6 +197,40 @@ header li:nth-child(1) {
   position: relative;
 }
 
+@media screen and (max-width: 990px) {
+  .about {
+    height: 50vh;
+  }
+  .about-wrapper {
+    width: 600px;
+    height: 300px;
+    top: -50%;
+  }
+  .about-card-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .about-card-text {
+    padding: 10px 0 0 20px;
+  }
+  .about-card-text h2 {
+    font-size: 1.4rem;
+  }
+  .about-card-text-header {
+    color: #978b91;
+    font-size: 1rem;
+  }
+  .about-card-text-description {
+    color: #584f53;
+    font-size: 0.9rem;
+  }
+  .iam {
+    height: 250px;
+  }
+}
+
 .activity {
   height: 100vh;
   display: grid;
@@ -216,12 +253,86 @@ header li:nth-child(1) {
   width: 450px;
 }
 
+@media screen and (max-width: 1400px) {
+  .activity-wrapper {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .activity-wrapper {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .activity {
+    height: 110vh;
+  }
+  -wrapper {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 1138px) {
+  .activity-wrapper {
+    width: 90vw;
+  }
+  .activity-image {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .activity-wrapper {
+    width: 80vw;
+  }
+  .activity-image {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .activity-wrapper {
+    width: 90%;
+  }
+  .activity-image {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .activity {
+    height: 90vh;
+  }
+  .activity-wrapper {
+    width: 90%;
+  }
+  .activity-image {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .activity {
+    height: 90vh;
+  }
+  .activity-wrapper {
+    width: 90%;
+  }
+  .activity-image {
+    width: 210px;
+  }
+}
+
 .portfolio {
   height: 130vh;
   background: url(../img/camera-bg.jpg), #f2d5d7;
   background-position: right bottom;
   background-repeat: no-repeat;
   padding-top: 30px;
+  display: grid;
+  justify-content: center;
 }
 
 .portfolio h1 {
@@ -235,7 +346,6 @@ header li:nth-child(1) {
   width: 70vw;
   margin: 0 auto;
   display: grid;
-  margin: 0 auto;
   grid-template-columns: 360px 300px 110px 300px;
   grid-template-rows: 266px 266px 266px;
   grid-gap: 15px;
@@ -290,6 +400,37 @@ header li:nth-child(1) {
   grid-row: 3;
 }
 
+@media screen and (max-width: 1400px) {
+  .portfolio-wrapper {
+    height: 80%;
+    width: 90%;
+    background-color: red;
+    margin: 0 auto;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 270px 225px 82.5px 225px;
+    grid-template-rows: 236px 236px 236px;
+    grid-gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio {
+    height: 110vh;
+  }
+  .portfolio-wrapper {
+    height: 80%;
+    width: 90%;
+    background-color: red;
+    margin: 0 auto;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 238px 190px 58px 190px;
+    grid-template-rows: 156px 156px 150px;
+    grid-gap: 15px;
+  }
+}
+
 .testimonial {
   height: 95vh;
   width: 100%;
@@ -340,7 +481,7 @@ header li:nth-child(1) {
 
 .home-blog {
   top: 0;
-  height: 99vh;
+  height: 110vh;
   width: 100%;
   text-align: center;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black), url("../img/girl1.jpg") center top;
@@ -372,6 +513,73 @@ header li:nth-child(1) {
 .home-blog a:hover {
   color: #e90e65;
   cursor: pointer;
+}
+
+.blog-news {
+  padding-top: 50px;
+  width: 100%;
+  height: 200vh;
+  background-image: url(../img/girl2.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog-news-wrapper {
+  height: 94%;
+  width: 80%;
+  margin: 0 auto;
+  background: #e90e65;
+  border-radius: 15px;
+  padding-top: 40px;
+}
+
+.blog-news-wrapper .blog-header {
+  color: white;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.blog-news-wrapper .blog-box {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 32% 64%;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  column-gap: 15px;
+  border: 2px solid red;
+  color: white;
+}
+
+.blog-news-wrapper .blog-box-header {
+  font-size: 2rem;
+}
+
+.blog-news-wrapper .blog-box-text {
+  font-size: 1rem;
+}
+
+.blog-news-wrapper img:nth-child(1) {
+  margin-top: 15px;
+  display: block;
+  grid-column: 1;
+  width: 360px;
+  height: 300px;
+}
+
+.blog-news-wrapper img:nth-child(2) {
+  border-radius: 50px;
+}
+
+.blog-news-wrapper img:nth-last-child(3) {
+  border-radius: 15px;
+}
+
+.blog-news-wrapper .blog-text {
+  grid-column: 2;
+  border: 2px solid purple;
 }
 
 .contact {
@@ -548,6 +756,61 @@ h1 {
   transform: scaleX(-1);
 }
 
+@media screen and (max-width: 1312px) {
+  .photos img {
+    width: 250px;
+  }
+  .wrapper-works {
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .photos img {
+    width: 230px;
+  }
+  .wrapper-works {
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  .photos img {
+    width: 200px;
+  }
+  .wrapper-works {
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .works {
+    height: 70vh;
+  }
+  .photos img {
+    width: 180px;
+  }
+  .wrapper-works {
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    align-items: center;
+  }
+}
+
 .instagram-feed {
   height: 100vh;
 }
@@ -668,6 +931,54 @@ h1 {
 .twitter-btn:hover {
   background: #0691d1;
   border-color: #04a9f4;
+}
+
+@media screen and (max-width: 1110px) {
+  .instagram-feed-wrapper {
+    width: 90%;
+    height: 800px;
+    margin: 10px auto 0 auto;
+    display: grid;
+    grid-template-columns: 262,5px 448px;
+    grid-template-rows: 450px 300px;
+    align-content: center;
+    justify-content: center;
+    column-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .instagram-feed {
+    height: 160vh;
+  }
+  .instagram-feed-wrapper {
+    width: 90%;
+    height: 160vh;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 420px 450px 300px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 30px;
+  }
+  .instagram-feed-card {
+    grid-column: 1;
+    grid-row: 1;
+    width: 262.5px;
+  }
+  .instagram-feed-images {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 10px;
+    width: 560px;
+  }
+  .instagram-feed-socials {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 10px;
+  }
 }
 
 body {
