@@ -16,44 +16,50 @@
 </head>
 
 <body>
-
+    <!-- wraz ze zmniejszeniem rozdzielczosci obraz zmienia swoją wysokość -->
     <section class="home">
-        <header>
-            <!-- <nav class="nav"> -->
+        <nav class="nav">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="index.html">ABOUT</a></li>
-                <li><a href="index.html">ACTIVITY</a></li>
-                <li><a href="index.html">PORTFOLIO</a></li>
-                <li><a href="index.html">TESTIMONIAL</a></li>
+                <li><a href="#" data-key="home" class="menu-link">HOME</a></li>
+                <li><a href="#" data-key="about" class="menu-link">ABOUT</a></li>
+                <li><a href="#" data-key="activity" class="menu-link">ACTIVITY</a></li>
+                <li><a href="#" data-key="portfolio" class="menu-link">PORTFOLIO</a></li>
+                <li><a href="#" data-key="testimonial" class="menu-link">TESTIMONIAL</a></li>
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="blog.html">CONTACT</a></li>
+                <li><a href="#" data-key="contact" class="menu-link">CONTACT</a></li>
             </ul>
-            <!-- </nav> -->
-        </header>
 
+            <div class="menu" onclick="myFunction(this)">
+
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
         <h1>A CAMERA IS THE SAVE BUTTON FOR THE MIND’S EYE</h1>
         <button class="explore-btn">EXPLORE</button>
     </section>
     <section class="about">
-        <!-- <div class="about-card">
-            <img src="img/girl3.jpg" alt="image-girl">
-        </div> -->
-
+        <div class="about-card">
+            <div class="gradient-overlay-about"> <img class="about-card-image" src="img/girl1.jpg" alt="image-girl">
+            </div>
+            <div class="gradient-overlay-about"><img class="about-card-image" src="img/girl2.jpg" alt="image-girl">
+            </div>
+        </div>
     </section>
     <section class="iam">
-        <div class="about-wrapper">
-            <div class="about-card-image">
+        <div class="iam-wrapper">
+            <div class="iam-card-image">
                 <!-- Uwaga co do zapisu gradient-overlay -->
                 <!-- <div class="gradient-overlay"> -->
-                    <img src="img/girl3.jpg" alt="image-girl">
+                <div class="gradient-overlay-iam"><img src="img/girl3.jpg" alt="image-girl"></div>
                 <!-- </div> -->
             </div>
-            <div class="about-card-text">
+            <div class="iam-card-text">
                 <h2>I AM SANDRA REIGEL</h2>
-                <p class="about-card-text-header">Professional photographer</p>
+                <p class="iam-card-text-header">Professional photographer</p>
                 <span></span>
-                <p class="about-card-text-description">Sed do eiusmod tempor incididunt ut labore et dolo magna aliqua.
+                <p class="iam-card-text-description">Sed do eiusmod tempor incididunt ut labore et dolo magna aliqua.
                     Ut enim ad minim veniam, quis nostd
                     exercitation ullamco laboris nisi ut aliquip ex ea mo consequat. Duis aute irure dolor in
                     reprehenderit
@@ -72,57 +78,120 @@
                 </div>
             </div>
             <div class="photos">
-               
                 <div class="gradient-overlay">
-                    <img src="img/recent-img1.jpg" alt="asd" class="shadow image ">
+                    <img src="img/recent-img1.jpg" alt="asd" class="shadow image">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="works-photo-text">
+                        <h3 class="works-photo-text-h3">Model photography</h3>
+                        <p class="works-photo-text-p">Digital, photography</p>
+                    </div>
                 </div>
-            
+
                 <div class="gradient-overlay">
-                    <img src="img/recent-img2.jpg" alt="asd" class="shadow image ">
+                    <img src="img/recent-img2.jpg" alt="asd" class="shadow image">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="works-photo-text">
+                        <h3 class="works-photo-text-h3">Model photography</h3>
+                        <p class="works-photo-text-p">Digital, photography</p>
+                    </div>
                 </div>
                 <div class="gradient-overlay">
-                    <img src="img/recent-img3.jpg" alt="asd" class="shadow image ">
+                    <img src="img/recent-img3.jpg" alt="asd" class="shadow image display-second">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="works-photo-text">
+                        <h3 class="works-photo-text-h3">Model photography</h3>
+                        <p class="works-photo-text-p">Digital, photography</p>
+                    </div>
                 </div>
                 <div class="gradient-overlay">
-                    <img src="img/recent-img4.jpg" alt="asd" class="shadow image ">
+                    <img src="img/recent-img4.jpg" alt="asd" class="shadow image display">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="works-photo-text">
+                        <h3 class="works-photo-text-h3">Model photography</h3>
+                        <p class="works-photo-text-p">Digital, photography</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="portfolio">
-        <div class="portfolio-header">
-            <h1>PORTFOLIOS</h1>
-        </div>
         <div class="portfolio-wrapper">
-            <!-- <h1>PORTFOLIOS</h1> -->
-
+            <div class="portfolio-header">
+                <h1>PORTFOLIOS</h1>
+            </div>
             <div class="item-a boxs shadow">
-                <img src="img/portfolio-img1.png" alt="abc" class="portfolio-images">
+                <div class="gradient-overlay-portfolio">
+                    <img src="img/portfolio-img1.png" alt="abc" class="portfolio-images">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="portfolio-photo-text">
+                        <h3 class="portfolio-photo-text-h3">Natural site</h3>
+                    </div>
+                </div>
             </div>
             <div class="item-b boxs">
-                <img src="img/portfolio-img2.png" alt="abc" class="portfolio-images">
+                <div class="gradient-overlay-portfolio">
+                    <img src="img/portfolio-img2.png" alt="abc" class="portfolio-images">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="portfolio-photo-text">
+                        <h3 class="portfolio-photo-text-h3">Vacation special photography</h3>
+                    </div>
+                </div>
             </div>
             <div class="item-c boxs">
-                <img src="img/portfolio-img3.png" alt="abc" class="portfolio-images">
+                <div class="gradient-overlay-portfolio">
+                    <img src="img/portfolio-img3.png" alt="abc" class="portfolio-images">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="portfolio-photo-text">
+                        <h3 class="portfolio-photo-text-h3">Product photography</h3>
+                    </div>
+                </div>
             </div>
             <div class="item-d boxs">
-                <img src="img/portfolio-img4.png" alt="abc" class="portfolio-images">
+                <div class="gradient-overlay-portfolio">
+                    <img src="img/portfolio-img4.png" alt="abc" class="portfolio-images">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="portfolio-photo-text">
+                        <h3 class="portfolio-photo-text-h3">Historical place shots</h3>
+                    </div>
+                </div>
             </div>
             <div class="item-e boxs">
-                <img src="img/portfolio-img5.png" alt="abc" class="portfolio-images">
+                <div class="gradient-overlay-portfolio">
+                    <img src="img/portfolio-img5.png" alt="abc" class="portfolio-images">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="portfolio-photo-text">
+                        <h3 class="portfolio-photo-text-h3">Lorem ipsum dolor</h3>
+                    </div>
+                </div>
             </div>
             <div class="item-f boxs">
-                <img src="img/portfolio-img6.png" alt="abc" class="portfolio-images">
+                <div class="gradient-overlay-portfolio">
+                    <img src="img/portfolio-img6.png" alt="abc" class="portfolio-images">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="portfolio-photo-text">
+                        <h3 class="portfolio-photo-text-h3">Lorem ipsum dolor</h3>
+                    </div>
+                </div>
             </div>
             <div class="item-g boxs">
-                <img src="img/portfolio-img7.png" alt="abc" class="portfolio-images">
+                <div class="gradient-overlay-portfolio">
+                    <img src="img/portfolio-img7.png" alt="abc" class="portfolio-images">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="portfolio-photo-text">
+                        <h3 class="portfolio-photo-text-h3">Portraits</h3>
+                    </div>
+                </div>
             </div>
             <div class="item-h boxs">
-                <img src="img/portfolio-img8.png" alt="abc" class="portfolio-images">
+                <div class="gradient-overlay-portfolio">
+                    <img src="img/portfolio-img8.png" alt="abc" class="portfolio-images">
+                    <img src="img/heart.png" alt="asdd" class="heart">
+                    <div class="portfolio-photo-text">
+                        <h3 class="portfolio-photo-text-h3">Wedding photography</h3>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
     <section class="activity">
         <div class="activity-wrapper">
@@ -134,16 +203,31 @@
                 </div>
             </div>
             <div class="kokos">
-                <img src="img/activity-img1.png" alt="ss" class="activity-image">
-                <img src="img/activity-img2.png" alt="ss" class="activity-image">
-                <img src="img/activity-img3.png" alt="ss" class="activity-image">
-
+                <div class="gradient-overlay-activity">
+                    <img src="img/activity-img1.png" alt="ss" class="activity-image">
+                    <div class="activity-photo-text">
+                        <h3 class="activity-photo-text-h3">Model photography</h3>
+                        <span class="activity-photo-text-p">Read more >></span>
+                    </div>
+                </div>
+                <div class="gradient-overlay-activity">
+                    <img src="img/activity-img2.png" alt="ss" class="activity-image">
+                    <div class="activity-photo-text">
+                        <h3 class="activity-photo-text-h3">Model photography</h3>
+                        <span class="activity-photo-text-p">Read more >></span>
+                    </div>
+                </div>
+                <div class="gradient-overlay-activity">
+                    <img src="img/activity-img3.png" alt="ss" class="activity-image display">
+                    <div class="activity-photo-text">
+                        <h3 class="activity-photo-text-h3">Model photography</h3>
+                        <span class="activity-photo-text-p">Read more >></span>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
     <section class="testimonial">
-        <!-- <img src="img/about-me-img.jpg" alt=""> -->
         <div class="testimonial-wrapper">
             <h1 class="h1-white">PEOPLE SAYS ABOUT ME</h1>
             <img src="img/quote-icon.png" alt="ss" class="quote-image">
@@ -175,14 +259,21 @@
             </div>
             <div class="instagram-feed-images">
                 <div class="zip-content">
-                    <h1>ACTIVITY OF THE MONTH</h1>
+                    <h1>INSTAGRAM FEED</h1>
                     <div>
                         <img class="arrow" src="img/right-arrow - dark.png" alt="sss">
                         <img class="arrow" src="img/right-arrow - dark.png" alt="sss">
                     </div>
                 </div>
-                <img src="img/feed-img1.png" class="instagram-feed-image" alt="abc">
-                <img src="img/feed-img2.png" class="instagram-feed-image" alt="abc">
+                <div class="instagram-feed-image-wrapper">
+                    <div class="gradient-overlay-instagram">
+                        <img src="img/feed-img1.png" class="instagram-feed-image" alt="abc">
+                    </div>
+
+                    <div class="gradient-overlay-instagram">
+                        <img src="img/feed-img2.png" class="instagram-feed-image" alt="abc">
+                    </div>
+                </div>
             </div>
             <div class="instagram-feed-socials">
                 <p class="instagram-feed-socials-header">Find me on social media</p>
@@ -191,10 +282,7 @@
                     <i class="ri-twitter-fill"></i>
                     <i class="ri-pinterest-line"></i>
                     <i class="ri-google-fill"></i>
-                    <!-- <img src="img/facebook.png" alt="abc" class="social-icons">
-                <img src="img/twitter.png" alt="abc" class="social-icons">
-                <img src="img/pinterest.png" alt="abc" class="social-icons">
-                <img src="img/google-plus.png" alt="abc" class="social-icons"> -->
+
                 </div>
             </div>
         </div>
@@ -210,7 +298,6 @@
             <div class="contact-form-wrapper">
                 <p class="contact-form-text">CONTACT ME</p>
                 <div class="contact-form-field">
-
                     <input type="text" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="contact-form-field">
@@ -218,24 +305,24 @@
                     <input type="text" name="name" placeholder="Your Email" required id="active">
                 </div>
                 <div class="contact-form-field">
-
-                    <textarea placeholder="Your Message" name="message" cols="30" rows="8"></textarea>
+                    <textarea class="display-textarea" placeholder="Your Message" name="message" cols="30"
+                        rows="8"></textarea>
+                    <textarea class="display-textarea-small" placeholder="Your Message" name="message" cols="20"
+                        rows="6"></textarea>
                 </div>
                 <button class="send-btn">
                     Send
                 </button>
             </div>
-
         </div>
-
     </section>
-
     <footer>
         <div class="footer-wrapper">
-            <p><a href="">&copy 2019 Girly</a> | Design by <a href="">freehtml5.co</a> | All rights reserved</p>
+            <p><a class="footer-link" href="#">&copy 2019 Girly</a> | Design by <a class="footer-link"
+                    href="#">freehtml5.co</a> | All rights reserved</p>
         </div>
     </footer>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,117 +1,94 @@
 .activity {
-    height: 100vh;
-    // width: 100%;
+    height: auto;
     display: grid;
     justify-content: center;
     align-items: center;
     background: #f3e7e8;
 
     &-wrapper {
-        height: 80%;
+        
         width: 72vw;
-        // margin: 0 auto;
-        // background: aqua;
-        // display: flex;
-        // justify-content: space-between;
+        padding: 60px 0px 90px 0;
+    
+    }
+    &-image {
+        width: 450px;
     }
 }
 
 .kokos {
     display: flex;
-    column-gap: 15px;
-    
-    
+    column-gap: 15px;   
 }
-
-.activity-image {
-    width: 450px;
-}
-
 @media  screen and(max-width: 1400px){
     .activity-wrapper {
-        width: 85vw;
-    }
-    
+        width: 95vw;
+    }   
 }
-
 @media  screen and(max-width: 1200px){
     .activity-wrapper {
         width: 90vw;
-    }
-    
+    }   
 }
-
-
-@media  screen and(max-width: 1400px){
-
-    .activity {
-        height: 110vh;
-    }
-
-    &-wrapper {
-        width: 95vw;
-    }
-    
-}
-
 
 @media  screen and(max-width: 1138px){
     .activity-wrapper {
         width: 90vw;
+        &-image {
+            width: 330px;
+        }
     }
     
-    .activity-image {
-        width: 330px;
-    }
+    
 }
 
 @media  screen and(max-width: 1090px){
-    .activity-wrapper {
-        width: 80vw;
-    }
-    
     .activity-image {
         width: 270px;
     }
 }
-
 @media  screen and(max-width: 1000px){
-   
-
     .activity-wrapper {
         width: 90%;
-    }
-    
+    }  
     .activity-image {
         width: 280px;
     }
 }
 
 @media  screen and(max-width: 910px){
-    .activity {
-        height: 90vh;
-    }
-
     .activity-wrapper {
-        width: 90%;
-    }
-    
-    .activity-image {
-        width: 240px;
-    }
+        width: 95%;
+        &-image {
+            width: 240px;
+        }
+    }    
 }
-
 
 @media  screen and(max-width: 810px){
-    .activity {
-        height: 90vh;
-    }
+    .activity-wrapper {   
+        padding: 40px 0px 40px 0px;
+        &-image {
+            width: 210px;
+        }
+    }   
+}
 
-    .activity-wrapper {
-        width: 90%;
-    }
-    
+@media screen and(max-width: 601px){
     .activity-image {
-        width: 210px;
+        width: 100%;
+    }
+    .instagram-feed-image {
+        width: 50%;
+    } 
+    .gradient-overlay-activity:nth-last-child(2) {
+        display: none;
     }
 }
+
+@media screen and(max-width: 400px){
+   .activity-wrapper {
+        height: auto;
+   }
+}    
+    
