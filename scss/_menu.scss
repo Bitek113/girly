@@ -1,30 +1,107 @@
-header {
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+}
 
+li {
+    padding: 0 15px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+}
+li:nth-child(1) {
+    color:$crimson;
+}
+a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
     position: relative;
+    padding: .2em;
+    color: purple;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background-color: var(--blue);
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+a:hover::after {
     width: 100%;
-    z-index: 1;
-
-    // overflow: hidden;
-    
-
-    ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        margin: 10px auto;
-        
-    }
-
-    li {
-        padding: 0 15px;
-        font-size: 1.1rem;
-        color: white;
-        font-weight: bold;
-    }
 }
 
 .nav {
-    width: 80%;
-    background-color: aqua;
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.4vh;
+    margin: 0;
+    position: relative;
 }
+
+.menu {
+    display: none;
+}
+
+@media screen and(max-width: 1000px) {
+    .menu {
+        display: block;
+        padding: 15px 15px 0 0;
+    }
+
+    .nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: end;   
+    }
+
+    ul  {
+        position: absolute;
+        right: 0;
+        top: -2vh;
+        background: $pink;
+        height: 100vh;
+        flex-direction: column;
+        align-items: end;
+        text-align: center;
+        display: none;
+
+    }
+    ul.active {
+        transform: translate(0%);
+        display: block;
+    }
+
+    li {
+        font-size: 1rem;
+        padding-bottom: 25px;
+    }
+    a {
+        color: whitesmoke;
+        font-size: 2.5rem;
+        letter-spacing: 2px;   
+    }  
+      
+    .menu {
+            padding-right: 30px;
+            visibility: visible;
+    }   
+}
+
+@media screen and(max-width: 760px) {
+    ul {
+        width: 100%;
+        height: 100vh;
+    }
+} 

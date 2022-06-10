@@ -1,42 +1,28 @@
-header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 35%;
-    z-index: 1;
-    padding-top: 40px;
-    overflow: hidden;
-    
-
-    ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        margin: 10px auto;
-        
-    }
-
-    li {
-        padding: 0 15px;
-        font-size: 1.1rem;
-        color: white;
-        font-weight: bold;
-    }
-
-
-    li:nth-child(1) {
-        color:$crimson;
-    }
-}
-.home {
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
   
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+.home {
     top: 0;
     height: 99vh;
     width: 100%;
-    // padding-top: 40vh;
-    // align-items: center;
     text-align: center;
-    // overflow: hidden;
     background:    
     -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black),
     url("../img/banner-img.jpg") center top;
@@ -45,6 +31,7 @@ header {
     h1 {
         font-size: 3.4rem;
         color: white;
+        padding: 0 370px;
     }
     .explore-btn{
        display: block;
@@ -61,12 +48,31 @@ header {
 
 .home a {
      
-        text-decoration: none; 
-        color: white;
+  text-decoration: none; 
+  color: white;
        
 }
 
 .home a:hover {
     color: #e90e65;
     cursor: pointer;
+}
+
+
+@media screen and(max-width: 1300px) {
+  .home {
+      h1 {
+        padding: 0 100px;  
+      }
+  }
+
+}
+
+@media screen and(max-width: 657px) {
+    .home {
+       h1 {
+        font-size: 2.5rem;
+        padding: 0 50px;  
+      }
+    }
 }

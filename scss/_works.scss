@@ -28,23 +28,27 @@
 .image {
     // margin-right: 15px;
     border-radius: 1rem;
-    
+    width: 290px;
+    height: auto;
 
     .shadow img{
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.85));
-   
+    
     }
     .shadow:hover {
         background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95)); 
-      
+       
     }
 }
 
-.photos img {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.85));
+// .photos img {
+//     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.85));
+//     // transform:scale(1.0);
   
-  
-}
+// }
+// .photos:hover   img{
+//     transform:scale(1.1);
+// }
 
 h1 {
     color: #584f53;
@@ -90,9 +94,9 @@ h1 {
 
 
 @media screen and(max-width: 1312px) {
-    .photos  img {
-        width: 250px;
-    }
+    // .photos  img {
+    //     width: 250px;
+    // }
     .wrapper-works {
         width: 84%;
         display: flex;
@@ -105,9 +109,9 @@ h1 {
 }
 
 @media screen and(max-width: 1188px) {
-    .photos  img {
-        width: 230px;
-    }
+    // .photos  img {
+    //     width: 230px;
+    // }
     .wrapper-works {
         width: 84%;
         display: flex;
@@ -121,7 +125,7 @@ h1 {
 
 
 @media screen and(max-width: 1082px) {
-    .photos  img {
+    .photos  > .shadow, .image {
         width: 200px;
     }
     .wrapper-works {
@@ -137,11 +141,15 @@ h1 {
 
 @media screen and(max-width: 960px) {
 
+    .gradient-overlay:nth-child(4) {
+        display: none;
+
+    }
     .works {
         height: 70vh;
     }
 
-    .photos  img {
+    .photos  > .shadow, .image {
         width: 180px;
     }
     .wrapper-works {
@@ -150,7 +158,47 @@ h1 {
         flex-direction: column;
         justify-self: space-between;
         align-items: center;
-        // background: violet;
+       
      
     }
+}
+
+@media screen and(max-width: 900px) {
+    .display {
+        display: none;
+    }
+    // .gradient-overlay:nth-child(3) {
+    //     display: none;
+    
+    // }
+}
+
+@media screen and(max-width: 600px) {
+    .display-second {
+        display: none;
+        
+    }
+    .gradient-overlay:nth-child(3) {
+        display: none;
+    
+    }
+    .photos  > .shadow, .image{
+        width: 160px;
+        
+    }
+}
+
+@media screen and(max-width: 400px) {
+
+    .works {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .photos  > .shadow, .image {
+        width: 140px;
+        
+        
+    }
+    
 }

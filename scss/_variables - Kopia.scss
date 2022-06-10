@@ -55,6 +55,7 @@ $crimson:#dc0e56;
         background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
         border-radius: 15px;  
     }
+
     &:hover:after {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95));
         transition: 0.0001s ease;
@@ -68,7 +69,7 @@ $crimson:#dc0e56;
 
 .gradient-overlay-about {
     position: relative;
-   height: 100%;
+    height: 100%;
 
     &::after {
         content: '';
@@ -84,7 +85,7 @@ $crimson:#dc0e56;
     position: relative;
     height: 100%;
     border-bottom-left-radius: 15px;
-    border-top-left-radius:15px;
+     border-top-left-radius:15px;
 
     &::after {
         content: '';
@@ -98,7 +99,6 @@ $crimson:#dc0e56;
         border-top-left-radius:15px;  
     }
 }
-
 .gradient-overlay-portfolio {
     position: relative;
     height: 100%;
@@ -140,6 +140,7 @@ $crimson:#dc0e56;
     position: relative;
     height: 100%;
   
+
     &::after {
         content: '';
         position: absolute;
@@ -151,10 +152,13 @@ $crimson:#dc0e56;
         background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
         border-radius: 1rem; 
     }
+  
+}
 
-    &:hover:after {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95));
-    }
+.gradient-overlay-instagram:hover:after {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(233, 14, 101, 0.95));
+    // opacity: 0.9;
+  
 }
 
 .h1-white {
@@ -169,7 +173,61 @@ $crimson:#dc0e56;
 
 //   to wyżej miało służyć do efektu na zdj tego overlay z gradientem  po nakierowaniu myszka na zdjecia   
 
+
+
+@media screen and(max-width: 460px){ 
+    .zip-content h1 {
+        font-size: 1.2rem;
+    }  
+}
+
+@media screen and(max-width: 1110px)  {
+    .gradient-overlay-instagram {
+        position: relative;
+        // height: 100%;
+      
+    
+        &::after {
+            content: '';
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            width: 255px;
+            height: 330px;
+            background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+            border-radius: 1rem; 
+        }
+      
+    }
+}
+@media screen and(max-width: 600px)  {
+    .gradient-overlay-instagram {
+        position: relative;
+        // height: 100%;
+      
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 420px;
+            height: 543px;
+            background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+            border-radius: 1rem; 
+        }
+      
+    }
+    .gradient-overlay-instagram:nth-last-child(1) {
+        display: none;
+    }
+    .gradient-overlay-activity:nth-last-child(1) {
+        display: none;
+    }
+}
 .works-photo-text {
+   
     width: 80%;
     height: 50px;
     position: absolute;
@@ -207,13 +265,13 @@ $crimson:#dc0e56;
 }
 
 .portfolio-photo-text {
+   
     width: 80%;
     height: 50px;
     position: absolute;
     bottom: 20px;
     left: 6%;
     z-index: 2;
-
     &-h3 {
         color: white;
         font-size: 1.4rem;
@@ -222,7 +280,9 @@ $crimson:#dc0e56;
     }
 }
 
-.activity-photo-text { 
+
+.activity-photo-text {
+   
     width: 80%;
     height: 50px;
     position: absolute;
@@ -240,17 +300,21 @@ $crimson:#dc0e56;
         padding-top: 15px;
         color: white;
         font-size: 1.4rem;
+    
         opacity: 0;
+
     }
     &-p:hover {
         display: block;
         cursor: pointer;
+
         opacity: 1;
     }
 }
 
 @media screen and(max-width: 1200px) {
     .works-photo-text {
+   
         &-h3 {
             font-size: 1rem;
         }
@@ -267,44 +331,70 @@ $crimson:#dc0e56;
     .portfolio-photo-text {
         height: 20px;           
         bottom: 1rem;
+  
+   
         &-h3 {
             font-size: 0.8rem;
         }
     }
-    .heart {  
+    .heart {
+       
         width: 18px;
-        height: 18px;   
+        height: 18px;
+       
     }
+    // .heart:nth-last-child() {
+    //     display: none;
+    // }
 }
 
-@media screen and(max-width: 1090px){
+@media screen and(max-width: 400px) {
+    .works-photo-text {
+   
+        &-h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .portfolio-photo-text {
+        height: 20px;           
+        bottom: 0.8rem;
+        &-h3 {
+            font-size: 0.6rem;
+        }
+    }
+
     .activity-photo-text {
         height: 20px;
         bottom: 1rem;
         left: 6%;
         z-index: 2;
         &-h3 {
-            font-size: 1.6rem;
+            font-size: 0.6rem;
         }
         &-p {
-            font-size: 1.0rem;
+            font-size: 0.6rem;
         }
+    }
+    .gradient-overlay-instagram {
+        position: relative;
+        // height: 100%;
+      
+    
+        &::after {
+            content: '';
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 330px;
+            background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+            border-radius: 1rem; 
+        }
+      
     }
     
-}
-
-@media screen and(max-width: 910px){
-    .activity-photo-text {
-        &-h3 {
-            font-size: 1.2rem;
-        }
-        &-p {
-            font-size: 1.0rem;
-        }
-    }
-    .gradient-overlay-activity:nth-last-child(2) {
-        display: none;
-    }
 }
 
 @media screen and(max-width: 800px) {
@@ -329,6 +419,9 @@ $crimson:#dc0e56;
     }
 
     .activity-photo-text {
+        height: 20px;
+        bottom: 1rem;
+        left: 6%;
         z-index: 2;
         &-h3 {
             font-size: 0.6rem;
@@ -339,53 +432,37 @@ $crimson:#dc0e56;
     }
     
 }
-
-@media screen and(max-width: 600px)  {
-    .gradient-overlay-instagram {
-
-        &::after {
-            width: 420px;
-            height: 543px;  
-        }
-        &:nth-last-child(1) {
-            display: none;
-        }
-    }  
-}
-
-@media screen and(max-width: 400px) {
-    .zip-content h1 {
-        font-size: 1.2rem;
-    }  
-    .works-photo-text {
-   
-        &-h3 {
-            font-size: 1rem;
-        }
-    }
-
-    .portfolio-photo-text {
-        height: 20px;           
-        bottom: 0.8rem;
-        &-h3 {
-            font-size: 0.6rem;
-        }
-    }
-
+@media screen and(max-width: 1090px){
     .activity-photo-text {
+        height: 20px;
+        bottom: 1rem;
+        left: 6%;
+        z-index: 2;
         &-h3 {
-            font-size: 0.6rem;
+            font-size: 1.6rem;
         }
         &-p {
-            font-size: 0.6rem;
+            font-size: 1.0rem;
         }
     }
-    .gradient-overlay-instagram {
-        &::after {
-             width: 100%;
-             height: 330px;
-        }  
-    }  
+    
+}
+@media screen and(max-width: 910px){
+    .activity-photo-text {
+        height: 20px;
+        bottom: 1rem;
+        left: 6%;
+        z-index: 2;
+        &-h3 {
+            font-size: 1.2rem;
+        }
+        &-p {
+            font-size: 1.0rem;
+        }
+    }
+    .gradient-overlay-activity:nth-last-child(2) {
+        display: none;
+    }
 }
 // wskazówka  jak zmienie rozdzielczosc zdjec activity to pojawi się ten za barddzo
 // rozszerzony gradient i w instagram też on jest  ale nawet na zwykłej roz. więc 
