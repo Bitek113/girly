@@ -1,5 +1,5 @@
 
-function myFunction(x) {
+function burgerAnimation(x) {
   x.classList.toggle("change");
 }
 

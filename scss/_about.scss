@@ -70,7 +70,6 @@
     &-card-text-description {
         color: #584f53;
         font-size: 1.2rem;
-
     }
 }
 
@@ -98,11 +97,9 @@
         }
 
         &-card-text-header {
-          
             font-size: 1rem;
         }
         &-card-text-description {
-           
             font-size: 0.9rem;   
         }  
     }
@@ -121,8 +118,7 @@
         display: grid;
         grid-template-rows: auto 1fr;
         grid-template-columns: 1fr;      
-}
-
+    }
 
         &-card-image img{
             grid-row: 1;
@@ -136,6 +132,7 @@
         }  
 }
 }
+
 @media screen and(max-width: 480px) {
     .iam-wrapper {
         margin-bottom: 55px;
