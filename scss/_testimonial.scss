@@ -12,10 +12,22 @@
         align-items: center;
         justify-content: space-between;
     }   
-}
 
-.testimonial h1 {
-    margin-top: 90px;
+    &-image {
+        display: flex;
+        justify-content: space-evenly;
+        color: red;
+        width: 100%;
+    }
+    h1 {
+        margin-top: 90px;
+    }
+    p {
+        text-align: center;
+        padding: 0 50px;
+        font-size: 1.2rem;
+        color: aliceblue;
+    }
 }
 
 .circle-image {
@@ -27,30 +39,16 @@
     height: 120px;  
 }
 
-.testimonial p {
-    text-align: center;
-    padding: 0 50px;
-    font-size: 1.2rem;
-    color: aliceblue;
+.quote-image {
+    width: 90px;
+    height: 70px;
 }
-
-.testimonial-image {
-        display: flex;
-        justify-content: space-evenly;
-        color: red;
-        width: 100%;
-    }
-
-    .quote-image {
-        width: 90px;
-        height: 70px;
-    }
 
 @media screen and(max-width: 560px){
     .testimonial {
         height: auto;
 
-        .testimonial p {
+        p {
             font-size: 0.8rem;
         }
 
